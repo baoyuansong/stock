@@ -1,0 +1,5 @@
+FROM 3dpro/webpy:latest
+RUN mkdir /stock
+RUN pip install http
+ADD stock_v2.py /stock/stock_v2.py
+CMD ["/usr/bin/python", "/stock/stock_v2.py"]
